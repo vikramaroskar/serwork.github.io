@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style>
+		body {background:#C00C00;}
+		.accordion {background: #c0ffee; border-radius: 10px; padding: 30px;}
+		.question { padding: 20px; cursor: pointer; color: #c00c00; border-top: 2px solid #0000bb; position:relative;}
+		.question .icon {position: absolute; right: 20px;top:0px; height: 100%; display:flex; align-items:center; transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;}
+		ul li {background: #eee; border-style: 2px solid #cc0000; margin: 5px;}
+		.answer {transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all; max-height:0; overflow:hidden;}
+		.accordion li.openit .question .icon{transform:rotate(180deg);}		
+		.accordion li.openit .answer{max-height:150px;}
+	</style>
+</head>
+<body>
+
+	
+
+	<h1>Accordion</h1>
+
+	<div class="container">
+		<div class="accordion">
+
+			<ul class="list-unstyled">
+  <li><div class="question">Coffee
+	<span class="glyphicon glyphicon-info-sign icon"> </span>	
+</div>
+  	<div class="answer"> 
+		<p> Answer 1</p>	
+	</div>
+    </li>
+  <li><div class="question">Tea
+	<span class="glyphicon glyphicon-info-sign icon"> </span>	
+</div>
+  <div class="answer"> 
+		<p> Answer 2</p></div></li>
+  <li><div class="question">Milk
+	<span class="glyphicon glyphicon-info-sign icon"> </span>	
+</div>
+  <div class="answer"> 
+		<p> Answer 3</p></div></li>
+</ul>
+		</div>
+
+	</div>
+
+	<script>
+		const accordion = document.querySelector('.accordion');
+		const items = accordion.querySelectorAll('li');
+		const questions = accordion.querySelectorAll('.question');
+
+		function toggleAccordion () {
+			console.log(this);
+			const thisitem =this.parentNode;
+			thisitem.classList.toggle('openit');
+
+
+		}
+
+		questions.forEach(question => question.addEventListener('click', toggleAccordion));
+	
+	
+	</script>
+
+</body>
+</html>
