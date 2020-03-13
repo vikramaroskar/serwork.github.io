@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+	--cback: #e3e3e3;
+	--cfront: #f6f6f6;
+    --ctext: #000;
+    --cred: #c60021;
+
+	
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(var(--cfront),var(--cback));
+    margin: 0;
+    color: var(--ctext);
+}
+
+.page-title {
+    color: var(--ctext);
+    text-align: center;
+    font-weight: normal;
+    font-size: 4em;
+}
+
+.game-info-container {
+    grid-column: 1/ -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    color: var(--cred);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    background-color: var(--cfront);
+    height: 175px;
+    width: 125px;
+    border-radius: 12px;
+    border: 1px solid;
+}
+
+.card.visible .card-back{
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+
+}
+
+
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border: 1px solid;
+
+}
+
+.card-back-img {
+    position: absolute;
+    width: 125px;
+    height: 175px;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    border: 1px solid;
+}
+
+.card-back-img:hover {
+    top: 1;
+}
+
+.card-front {
+    transform: rotate(180deg);
+    
+}
+
+.card-front-img {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+}
