@@ -47,7 +47,7 @@ body {
   width: 180px;
 }
 
-a {
+.projects a {
     color: white;
     text-decoration: none;
 }
@@ -82,6 +82,17 @@ a {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 
+}
+
+.sociallinks {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.sociallinks a {
+  color: dodgerblue;
 }
 
 .center {
