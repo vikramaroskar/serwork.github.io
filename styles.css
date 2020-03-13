@@ -130,12 +130,9 @@ footer p {
     height: 125px;
   }
 
-  .content .title {
-    font-size: 1.5rem;
-  }
-
-  .content .text {
-    font-size: 0.9rem;
+  .content .title,
+  .content .text  {
+    display: none;
   }
 
   .grid-3,
