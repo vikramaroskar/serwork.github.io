@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+body {
+    font-family: 'Lemon', cursive;
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    background-color: #66ccff;
+    color: #ce8dcc;
+}
