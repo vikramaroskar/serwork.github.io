@@ -14,10 +14,14 @@
 
     <h3>Web components in html and js</h3>
 
-    <card-component name="Mumbai" picture="http://i.picsum.photos/id/1016/3844/2563.jpg">    </card-component>
-    <card-component name="Pune" picture="https://i.picsum.photos/id/1015/6000/4000.jpg">    </card-component>
-    <card-component name="Bangalore" picture="https://i.picsum.photos/id/1011/5472/3648.jpg">    </card-component>
-
+    <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
+        <div slot="email">johndoe@gmail.com</div>
+        <div slot="phone">555-555-5555</div>
+      </user-card>
+      <user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/1.jpg">
+        <div slot="email">janedoe@gmail.com</div>
+        <div slot="phone">333-333-3333</div>
+      </user-card>
     <script src="script1.js"></script>
 </body>
 </html>
