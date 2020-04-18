@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Animae on scroll - card</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1><span>Flower Picture</span> Gallery</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, perspiciatis?</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <img src="images/orange.jpg" alt="">
+            <div class="">
+                <h3>Flower picture orange</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum fuga nesciunt ullam molestias nemo
+                    unde possimus nihil, laborum cum natus!</p>
+                <a href="" class="button">Buy Now</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="images/purple.jpg" alt="">
+            <div class="">
+                <h3>Flower picture purple</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum fuga nesciunt ullam molestias nemo
+                    unde possimus nihil, laborum cum natus!</p>
+                <a href="" class="button">Buy Now</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="images/white.jpg" alt="">
+            <div class="">
+                <h3>Flower picture white</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum fuga nesciunt ullam molestias nemo
+                    unde possimus nihil, laborum cum natus!</p>
+                <a href="" class="button">Buy Now</a>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="images/red.jpg" alt="">
+            <div class="">
+                <h3>Flower picture red</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum fuga nesciunt ullam molestias nemo
+                    unde possimus nihil, laborum cum natus!</p>
+                <a href="" class="button">Buy Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!--basic library initialisation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+        });
+    </script>
+</body>
+
+</html>
