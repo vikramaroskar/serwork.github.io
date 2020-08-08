@@ -1,0 +1,14 @@
+body {
+    margin:0;
+    background: rgb(55, 100, 144);
+    overflow: hidden;
+}
+
+img {
+    
+    height: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
