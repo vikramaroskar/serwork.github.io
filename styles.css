@@ -27,17 +27,44 @@
   display: flex;
 }
 
-
-
 body {
   font-family: "Roboto", sans-serif;
 }
 
 .navigator {
-  background: var(--dark-black);
+  background:var(--dark-black);
   flex: 1;
   color: var(--white-color);
 }
+
+
+.menu-links{
+    padding: 10px;
+    margin: 20px;
+    list-style: none;
+    font-weight: 400;
+    
+}
+
+.eachitem{
+    margin: 10px;
+}
+
+.sociallinks {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+
+    position: absolute;
+    bottom: 10vh;
+    left: 20px;
+  }
+  
+  .sociallinks a {
+    color: var(--white-color);
+    max-height: 25px;
+    max-width: 25px;
+  }
 
 .details {
   flex: 4;
