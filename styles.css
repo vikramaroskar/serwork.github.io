@@ -16,9 +16,18 @@
   --text-color: #505050;
 }
 
+.separateline{
+    display: inline-block;
+    width: 50px;
+    border-top: 2px solid var(--highlight);
+    margin-top: 5px;
+}
+
 .container {
   display: flex;
 }
+
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -57,6 +66,7 @@ body {
 .greet {
   color: var(--highlight);
   font-weight: 400;
+  font-size: 25px;
 }
 
 .profilepic {
@@ -70,6 +80,13 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 61px;
+}
+
+.mydesc {
+    font-weight: 400px;
+    color: var(--text-color);
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 .resume-bar {
