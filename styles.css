@@ -37,6 +37,20 @@ body {
   color: var(--white-color);
 }
 
+.profile-title {
+    font-weight: 700;
+    font-size: 35px;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+}
+
+.profile-title-dot {
+    color: var(--highlight);
+    font-weight: 700;
+    font-size: 35px;
+}
+
 
 .menu-links{
     padding: 10px;
@@ -49,6 +63,18 @@ body {
 .eachitem{
     margin: 10px;
 }
+
+.eachitem a {
+    text-decoration: none;
+}
+
+.eachitem a:link,
+.eachitem a:visited,
+.eachitem a:hover,
+.eachitem a:active {
+    color: var(--white-color);
+}
+
 
 .sociallinks {
     display: grid;
