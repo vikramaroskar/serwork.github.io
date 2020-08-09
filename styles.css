@@ -208,6 +208,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 61px;
+  margin-top: 5px;
 }
 .hdesc {
   color: var(--text-color);
@@ -220,8 +221,52 @@ body {
 }
 
 .hdesc > p {
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: 400;
+}
+
+.work {
+  display: flex;
+}
+
+.work-content {
+  background: var(--white-color);
+  padding: 25px;
+  flex: 1;
+}
+
+.project-list {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  margin-top: 25px;
+  grid-auto-rows: 1fr;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px 5px var(--light-black);
+  padding: 1rem;
+}
+
+.project:hover {
+  background: var(--highlight);
+  color: var(--white-color);
+}
+
+.project h2 {
+  color: var(--text-color);
+}
+
+
+.project a {
+  text-decoration: none;
+}
+
+.project i {
+  color: var(--text-color);
+  align-self: end;
 }
 
 .contactme {
@@ -262,14 +307,6 @@ body {
   display: flex;
 }
 
-.message-label {
-  flex: 1;
-}
-
-.message-box {
-  flex: 5;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -287,4 +324,67 @@ textarea {
   cursor: pointer;
   font-size: 16px;
   margin: 30px 0px 0px 30px;
+}
+
+@media (max-width: 767px) {
+  .top-bar {
+    display: block;
+  }
+
+  .navigator {
+    display: none;
+  }
+
+  .container {
+    max-width: 100vw;
+  }
+
+  .profile-content {
+    flex-direction: column;
+  }
+
+  .greet {
+    font-size: 30px;
+  }
+  .myname {
+    font-size: 40px;
+  }
+
+  .profilepic {
+    max-width: 80vw;
+    max-height: 80vw;
+  }
+
+  .resume-bar {
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    justify-content: stretch;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contactme {
+    flex-direction: column;
+  }
+
+  .htitle {
+    font-size: 30px;
+  }
+  .form-label {
+    display: none;
+    margin-top: 5px;
+  }
+
+  .contactme-content button {
+    width: 50vw;
+    height: 50px;
+    font-size: 16px;
+  }
 }
