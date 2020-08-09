@@ -18,17 +18,28 @@
     <div class="container">
         <section class="navigator">
 
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg viewBox="0 0 100 80" width="30" height="30">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                      </svg>
+                </a>
+            </span>
+            
             <div class="profile-title">Profile
                 <div class="profile-title-dot">.</div>
             </div>
 
             <div class="menu-links-container">
+                
                 <ul class="menu-links">
                     <li class="eachitem"><a href="#home">Home</a></li>
                     <li class="eachitem"><a href="#resume">Resume</a></li>
                     <li class="eachitem"><a href="#about">About</a></li>
                     <li class="eachitem"><a href="#work">Work</a></li>
-                    <li class="eachitem"><a href="#contact">Contact</a></li>
+                    <li class="eachitem"><a href="#contactme">Contact</a></li>
                 </ul>
             </div>
 
@@ -38,6 +49,19 @@
                         class="fab fa-linkedin fa-lg"></i></a>
                 <a href="https://medium.com/@vikramaroskar" class="href"><i class="fab fa-medium fa-lg"></i></a>
                 <a href="https://twitter.com/vikramaroskar" class="href"><i class="fab fa-twitter fa-lg"></i></a>
+            </div>
+        </section>
+        <section id="popmenu" class="popmenu">
+            <div class="menu-links-container">
+                
+                <ul id="side-menu" class="menu-links">
+                    <a href="" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <li class="eachitem"><a href="#home">Home</a></li>
+                    <li class="eachitem"><a href="#resume">Resume</a></li>
+                    <li class="eachitem"><a href="#about">About</a></li>
+                    <li class="eachitem"><a href="#work">Work</a></li>
+                    <li class="eachitem"><a href="#contactme">Contact</a></li>
+                </ul>
             </div>
         </section>
         <section class="details">
@@ -236,6 +260,22 @@
 
 
     </div>
+
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('popmenu').style.display='block';
+            document.getElementById('side-menu').style.display='flex';
+            document.getElementById('side-menu').style.flexDirection='column';
+            // document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+             document.getElementById('side-menu').style.display='none';
+            //  document.getElementById('main').style.marginLeft = ' 0px';
+         }
+        
+   </script>
 </body>
 
 </html>
