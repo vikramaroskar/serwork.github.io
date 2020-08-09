@@ -356,7 +356,7 @@ textarea {
 
   .popmenu {
     flex: 2.5;
-    background: red;
+    background: var(--dark-black);
     color: var(--white-color);
     font-size: 20px;
   }
