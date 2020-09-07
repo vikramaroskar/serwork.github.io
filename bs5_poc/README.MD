@@ -19,4 +19,10 @@ npm install node-sass gulp-sass --save-dev
 ```
 gulp
 gulp --tasks
+gulp sass
+```
+
+```
+import style
+since it is underscore it won't get compiled, just imported
 ```
